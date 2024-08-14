@@ -1,0 +1,154 @@
+/* General styling */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #2d2d2d;
+  color: #fff;
+}
+
+/* Header styling */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10%;
+  background-color: #1c1c1c;
+}
+
+header .logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+header .logo:hover {
+  color: aqua;
+}
+
+header nav {
+  display: flex;
+  gap: 20px;
+}
+
+header nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+}
+header nav a:hover {
+  color: #06f566;
+}
+header .cart-btn {
+  background-color: transparent;
+  border: 1px solid #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+}
+.cart-btn:hover {
+  color: #9e7109;
+}
+
+/* Hero section styling */
+.hero-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10%;
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.5),
+    rgba(255, 255, 255, 0.5)
+  );
+}
+
+.hero-text {
+  max-width: 50%;
+}
+
+.hero-text h1 {
+  font-size: 48px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.hero-text h1 span {
+  color: #ff49db;
+}
+
+.hero-text p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+.hero-text .buy-btn {
+  background-color: #ffb400;
+  color: #080808;
+  padding: 15px 25px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  text-decoration: none;
+}
+.hero-text .buy-btn:hover {
+  color: #8349ff;
+}
+
+.hero-image img {
+  max-width: 100%;
+  height: auto;
+  margin: 0 0 0 200px;
+  padding-top: 200px;
+}
+
+/* Responsive styling for mobile */
+@media screen and (max-width: 768px) {
+  .hero-section {
+    flex-direction: var();
+    align-items: flex-start;
+  }
+
+  .hero-text {
+    max-width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .hero-text h1 {
+    font-size: 26px;
+  }
+  .hero-image img {
+    max-width: 50%;
+    height: auto;
+    margin: 70px 0px 0 50px;
+  }
+  .hero-text .buy-btn {
+    background-color: #ffb400;
+    color: #2b2121;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 13px;
+    cursor: pointer;
+  }
+
+  header nav {
+    display: block;
+    font-size: 20px;
+  }
+  header nav a:hover {
+    color: #230c8b;
+  }
+
+  .cart-btn {
+    display: block;
+    width: 50px;
+  }
+  .cart-btn:hover {
+    color: #ffb400;
+  }
+
+  header {
+    padding: 15px 5%;
+  }
+}
